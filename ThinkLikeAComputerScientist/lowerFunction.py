@@ -1,68 +1,18 @@
 import re
-
 if __name__ == '__main__':
-    """使用正则表达式，将大写字母替换为_加小写字母"""
+    """列表的形式存储数据"""
     s = [
-        'id                      ',
-        'startTime               ',
-        'endTime                 ',
-        'sType                   ',
-        'treatedTime             ',
-        'category                ',
-        'categoryDetail          ',
-        'evaluation              ',
-        'evaluationType          ',
-        'evaluationRemark        ',
-        'staffInvitedEvaluateTime',
-        'userJoinEvaluateTime    ',
-        'relatedType             ',
-        'relatedId               ',
-        'interaction             ',
-        'closeReason             ',
-        'fromGroup               ',
-        'fromGroupId             ',
-        'fromStaff               ',
-        'inQueueTime             ',
-        'visitRange              ',
-        'vipLevel                ',
-        'staffId                 ',
-        'staffName               ',
-        'userId                  ',
-        'foreignId               ',
-        'fromIp                  ',
-        'fromPage                ',
-        'fromTitle               ',
-        'fromType                ',
-        'customFiled             ',
-        'description             ',
-        'transferRgType          ',
-        'fromHumanTransfer       ',
-        'transferFromStaffName   ',
-        'transferFromGroup       ',
-        'transferRemarks         ',
-        'humanTransferSessionId  ',
-        'worksheetIds            ',
-        'roundNumber             ',
-        'status                  ',
-        'userResolvedStatus      ',
-        'firstReplyCost          ',
-        'avgRespDuration         ',
-        'isValid                 ',
-        'transferType            ',
-        'staffMessageCount       ',
-        'userMessageCount        ',
-        'overflowFrom            ',
-        'alarmTimes              ',
-        'staffFirstReplyTime     ',
-        'stickDuration           ',
-        'clientFirstMessageTime  ',
-        'isEvaluationInvited     ',
-        'beginer                 ',
-        'ender                   ',
-        'originPlatform          ',
-        'searchKey               ',
-        'landPage                '
+        'allenBillionaireAct',
+        'allenKeepMoving',
+
     ]
+    """引入正则表达式，修改下数据的格式：将其中大写字母，转为小写，前面添加_"""
     for i in range(0,len(s)):
         sub = re.sub("[A-Z]", lambda x: "_" + x.group(0).lower(), s[i])
         print(sub)
+
+
+
+
+
+

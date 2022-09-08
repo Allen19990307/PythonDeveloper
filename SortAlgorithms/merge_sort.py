@@ -1,3 +1,4 @@
+"""归并排序"""
 def merge(s1,left,mid,right):
     """归并排序的设置，左右边界的确认"""
     l = mid - left + 1

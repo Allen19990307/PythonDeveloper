@@ -1,0 +1,153 @@
+[{
+	"categoryId": {
+		"$oid": "60dc2da898378600a460ce8e"
+	},
+	"disableMemberRefund": false,
+	"discounts": [{
+		"amount": {
+			"$numberLong": "0"
+		},
+		"campaignType": "",
+		"couponCode": "2yr89rnu3jmyattoryt2i88o",
+		"discount": {
+			"$numberLong": "0"
+		},
+		"id": {
+			"$oid": "62d4f166dc460100716a9497"
+		},
+		"memberLevel": {
+			"$numberLong": "0"
+		},
+		"memberName": "",
+		"picture": "",
+		"title": "【7月社群新人礼】味全每日C橙汁300ml*3瓶（随单送）",
+		"type": "present"
+	}, {
+		"amount": {
+			"$numberLong": "1225"
+		},
+		"campaignType": "",
+		"discount": {
+			"$numberLong": "0"
+		},
+		"memberLevel": {
+			"$numberLong": "0"
+		},
+		"memberName": "",
+		"picture": "",
+		"type": "score"
+	}],
+	"id": {
+		"$oid": "627cd76f46dcc1006f293f08"
+	},
+	"isCommented": false,
+	"isCouponEnabled": true,
+	"isDistribution": false,
+	"isFreeShipping": false,
+	"isPresent": false,
+	"isdefaultproportion": false,
+	"name": "【全岛推荐 领取入群礼下单更省 】味全热门产品花式系列组合装【冷链】",
+	"number": "QW20100511024",
+	"originPrice": {
+		"$numberLong": "7320"
+	},
+	"outTradeId": {
+		"$oid": "62d4f34515a12e00815b8458"
+	},
+	"payAmount": {
+		"$numberLong": "4900"
+	},
+	"payScore": {
+		"$numberLong": "1225"
+	},
+	"picture": "https://statics.maiscrm.com/609897549104ab069e4589ac/modules/content/o_1g3b7klqcg2foei8d41ks315n92/%E4%B8%BB%E5%9B%BE%20(2).jpg",
+	"price": {
+		"$numberLong": "6125"
+	},
+	"productId": {
+		"$oid": "627cd76f9c369e0083fdac71"
+	},
+	"refundTotal": {
+		"$numberLong": "0"
+	},
+	"spec": {
+		"barCode": "QW20100511024",
+		"externalSku": "QW20100511024",
+		"properties": [{
+			"id": "5f1966a7-27df-41b6-8f4b-1cc5ff4f423e",
+			"value": "好喝椰椰汁 300ml*3瓶+贝纳颂咖啡（经典蓝山）250ml *1瓶+德芙黑巧克力牛奶饮品370g*1盒+味全烤酸奶风味发酵乳230g*1瓶+金装鲜酪草莓味100g*3杯"
+		}],
+		"sku": "2yduhu29f71jqo1oak27qkuk"
+	},
+	"total": {
+		"$numberLong": "1"
+	},
+	"totalAmount": {
+		"$numberLong": "6125"
+	},
+	"type": "product"
+}, {
+	"campaigns": [{
+		"discountId": {
+			"$oid": "62d4f166dc460100716a9497"
+		},
+		"productIds": [{
+			"$oid": "627cd76f46dcc1006f293f08"
+		}],
+		"title": "",
+		"type": "presentCoupon"
+	}],
+	"categoryId": {
+		"$oid": "627235a25c848e0080e04903"
+	},
+	"disableMemberRefund": false,
+	"discounts": [],
+	"id": {
+		"$oid": "62be5e73dce1d6006f9f622f"
+	},
+	"isCommented": false,
+	"isDistribution": false,
+	"isFreeShipping": false,
+	"isPresent": false,
+	"isdefaultproportion": false,
+	"name": "味全每日C橙汁300ml*3瓶【冷链】",
+	"number": "QW20100629009",
+	"originPrice": {
+		"$numberLong": "0"
+	},
+	"outTradeId": {
+		"$oid": "62d4f34515a12e00815b8459"
+	},
+	"payAmount": {
+		"$numberLong": "0"
+	},
+	"payScore": {
+		"$numberLong": "0"
+	},
+	"picture": "https://statics.maiscrm.com/609897549104ab069e4589ac/modules/content/o_1g79ahirr8m41ko611n999hv217/1.jpg?x-oss-process=image/resize,h_232,w_232",
+	"price": {
+		"$numberLong": "2280"
+	},
+	"productId": {
+		"$oid": "62be5e72ac7bed00c86fb4f3"
+	},
+	"refundTotal": {
+		"$numberLong": "0"
+	},
+	"spec": {
+		"barCode": "QW20100629009",
+		"externalSku": "QW20100629009",
+		"properties": [{
+			"id": "e4a65187-d4ae-4552-b4e8-50b21a907395",
+			"value": "味全每日C橙汁300ml*3瓶"
+		}],
+		"sku": "2ynstrps3nkzw0gnqb805yq8"
+	},
+	"total": {
+		"$numberLong": "1"
+	},
+	"totalAmount": {
+		"$numberLong": "0"
+	},
+	"type": "product"
+}]

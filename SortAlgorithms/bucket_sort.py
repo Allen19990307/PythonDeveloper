@@ -1,3 +1,4 @@
+"""实现桶排序"""
 from typing import List
 def bucket_sort(s1:List[int]):
     min_num = min(s1)

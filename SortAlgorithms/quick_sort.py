@@ -1,3 +1,4 @@
+"""快速排序的实现方式"""
 def quick_sort(s1,left,right):
     if left >= right:
         return

@@ -1,0 +1,54 @@
+    receivedNum: Long, // 已领取数量
+    redeemedNum: Long, // 已核销数量
+    producer: String, // 优惠券码生成类型，dynamic/preBuild/import
+    importStatus: String, // 导入状态
+        from: String, // 来源
+        id: String, // 源优惠券 id
+    present: { // 买赠券赠品
+        productId: String, // product._id
+        sku: String, // 赠品 sku
+        count: Long, // 赠品数量
+    groupCouponId: ObjectId, // 集团优惠券的 id
+    groupAccountId: ObjectId, // 集团租户的 id
+    aborted: Boolean, // 是否舍弃
+    shouldRedeemInIssuedStore: Boolean, // 是否仅限发放小店使用
+    allowGifting: Boolean, // 是否可转赠
+    businesses: [{ // 使用场景
+        business: String, // 场景类型，如 wechatwork: 智慧导购企业微信
+        isEnabled: Boolean, // 是否启用
+        extra: Object, // 自定义数据
+        type: String, // 当 business 是 wechatwork 时，为库存类型：independent（门店独立库存）、shared（门店共享库存）
+      isEnabled: Boolean // 是否开启开发者模式
+      successPage: String, // 领取成功后的跳转页面
+    applicableCategoryIds: [ObjectId], // 适用类目 ID
+        productId: String, // 商品 ID
+        skus: [String], // 商品 sku
+        isEnabled: Boolean, // 是否开启好友领取后通知赠送者
+                content: String, // 短信文本内容
+            subscribeMessage: { // 订阅消息
+                id: String, // 订阅消息 id
+                page: String, // 打开的小程序页面
+            placeholderRules: [ // 动态参数
+                    placeholder: String, // 占位符
+                    name: String, // 名称
+                        property: String, // 属性
+                        valueTransfer: {}, // map 参数值转换规则
+                        defaultValue: String, // 默认值
+        isEnabled: Boolean, // 是否开启过期提醒
+        type: String, // 日期设置类型： hour、day
+        timeCount: Long, // 过期前多少天或多少小时
+                content: String, // 短信文本内容
+            subscribeMessage: { // 订阅消息
+                id: String, // 订阅消息 id
+                page: String, // 打开的小程序页面
+            placeholderRules: [ // 动态参数
+                    placeholder: String, // 占位符
+                    name: String, // 名称
+                        property: String, // 属性
+                        valueTransfer: {}, // map 参数值转换规则
+                        defaultValue: String, // 默认值
+    isPublicCollectionEnabled: Boolean, // 是否允许公开领取
+    availableChannelType: String, // 使用渠道：online（线上）、online_and_offline（线上线下）
+    applicableMethod: String, // 适用物流：全部配送渠道（all），快递配送（express），同城配送（city_express） 当 type 为 delivery 时有意义
+    canUsedWithOthers: Boolean, // 是否能和其他类型优惠券共同使用
+    superpositionType: String, // 叠加类型：仅与自己叠加（self），可与其他叠加券叠加（other）,为空表示不可叠加
